@@ -34,7 +34,6 @@ module.exports = function plugin(snowpackConfig, pluginOptions) {
   let isDev = true
 
   const { outputPath, targetDirectory, scssOptions } = formatOptions(pluginOptions)
-  console.log('scssOptions: ', scssOptions)
 
   const render = async (filepath) => {
     return new Promise((resolve, reject) => {
@@ -102,7 +101,6 @@ module.exports = function plugin(snowpackConfig, pluginOptions) {
         if (!fs.existsSync(outputDir)) {
           fs.mkdirSync(outputDir)
         }
-
 
         // 2. Merge all files to one file
         const outputMerged = `${outputDir}/merged.scss`
