@@ -49,7 +49,7 @@ mkdir scss-settings && cp node_modules/lb-styles/settings scss-settings
 ```
 Then i can modify the pre scss settings such as colors, fonts etc.
 
-Finally i will attach my local scss settings to the plugin. I also attach both every scss file in my src folder and the defaults in the lb-styles package as target for the compiler.
+Finally i will attach my local scss settings to the plugin. I will also make all scss file in my `src` folder AND the defaults in the `lb-styles` package as target for the compiler.
 
 #### snowpack.config.js
 ```js
