@@ -3,7 +3,7 @@ This small snowpack plugin will gather all your spread out `scss` files within `
 
 The default output dir is within `public` folder. The reason why for that is then will snowpack itself take care adding the file to the build.
 
-**Note: Do not manually add the output dir. Just specify the output dir in the `outputPath` field and let the plugin automatically create that dir. Also, you should add the output dir to '.gitignore' so it never gets stored in the code tree.**
+**Note: Do not manually add the output dir. Just specify the output dir in the `outputPath` field and let the plugin automatically create that dir. Also, you should add the output dir to `.gitignore` so it never gets stored in the code tree.**
 
 ## Whats in it for me?
 With this setup you can choose to add scss defaults (sass templates) stored in an other npm package. That means you can share base sass configuration between different projects and not reinvent the wheel al the time.
