@@ -1,6 +1,10 @@
 # snowpack-plugin-sass-compiler
 This small snowpack plugin will gather all your spread out `scss` files within `src` folder, merge them, compile them into `css` and store them in a desired ouput folder. Then it's up to you how you want to use the outputted css file. But the main idea is to link to the outputted file directly in the html file.
 
+The default output dir is within `public` folder. The reason why for that is then will snowpack itself take care adding the file to the build.
+
+**Note: Do not manually add the output dir. Just specify the output dir in the `outputPath` filed and let the plugin create that dir. Then you should add the output dir to '.gitignore' so it never gets stored in the code tree.**
+
 ## Whats in it for me?
 With this setup you can choose to add scss defaults (sass templates) stored in an other npm package. That means you can share base sass configuration between different projects and not reinvent the wheel al the time.
 
@@ -23,7 +27,7 @@ module.exports = {
       targetDirectory: ['src'], // Type: array. default: ['src']
       scssOptions: {
         outputStyle: 'compressed',
-        includePaths: ['some-dir/to/included/scss/docs'], // files where to locate included scss documents
+        includePaths: ['some-dir/to/included/scss/docs'], // Type: array. files where to locate included scss documents
         sourceMap: false,
       } // Type: object
     }],
