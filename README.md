@@ -18,7 +18,7 @@ npm i -D snowpack-plugin-sass-compiler
 ```js
 module.exports = {
   plugins: [
-    ["snowpack-plugin-content-hash", {
+    ["snowpack-plugin-sass-compiler", {
       outputPath: `some/desired/dir/including-filename.css`, // Type: string, default: public/css-site/styles.css
       targetDirectory: ['src'], // Type: array. default: ['src']
       scssOptions: {
